@@ -2,7 +2,7 @@
 
 body{
     background-color: 	#f9ddcb;
-    font-family: fantasy;
+    font-family: 'Tangerine', cursive;
     font-weight: 1;
     background-size: 100% 100%;
     padding: 0;
@@ -11,7 +11,7 @@ body{
 
 }
 h1{
-    color: grey;
+    color: #6d6875;
     font-size: 3.5em;
     margin: 0.5em;
     padding: 0;
@@ -22,6 +22,7 @@ line-height: 2em;
 color: black;
 padding: 0px;
 margin: 1em;
+font-family: 'Raleway', sans-serif;
 }
 
 ol{
@@ -149,15 +150,15 @@ nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::befor
 /* Sidebar */
 section#sidebar{
     width: 500px;
-    position: absolute;
+    position: relative;
     left: 10px;
     display: inline-block;
     background-color:	#ffb4a2;
-    margin: 1.5em 0 3em 1.5em;
-    padding: 1.7em 0.5em 2em 1.7em;
+    margin: 2em 0 3em 1.5em;
+    padding: 1.7em 2em 2em 1.7em;
     border-left: 	#b84747 groove 5px;
     border-right: #b84747 ridge 5px;
-    top: 150%;
+    top: -1900px;
 }
 
 /* Main */
@@ -191,35 +192,12 @@ footer {
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 1.5em 2em;
+    padding: 1.5em 2.0em;
     left: 0;
     top: 3000px;
     position: absolute;
 }
 
-footer ul#menuFooter{
-    display: inline-block;
-    list-style: none;
-    margin: 0 0 0 0.6em;
-    padding: 0;}
-
-footer ul li {
-    display: inline-block;
-    padding: 0 0.7em 0 0;
-    margin: 0;
-}
-footer ul li:before {
-    content: "| ";
-    padding-right: 0.7em;
-}
-footer a, footer a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-footer a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
 .soc{
     height: 20px;
     position: absolute;
@@ -230,9 +208,11 @@ footer a:hover {
     width: 365px;
     position: relative;
     display: block;
-    left: 65%;
+    left: 155%;
     z-index: 100;
-    bottom: 0px;
+    bottom: -85px;
+    margin: 1%;
+    padding: 1%;
 }
 .panel{
     margin: auto;
@@ -255,12 +235,22 @@ button:hover {
 #pics{
     background-color: white;
 }
-/* #vid playerVars: {
-    autoplay: 1,
-    showinfo; 0,
-    modestbranding: 1,
-    loop: 1,
-    iv_load_policy: 3,
-    mute: 1,
+.right{
+    display: inline-block;
+    margin: 25px;
+    padding: 10px;
+    line-height: 25x;
+    left: 800px;
+    top: 90px;
+    position: relative;
+    z-index: 500;
+}
+.models{
+    margin: 8px;
+    width: 500px;
+}
 
-} */
+#vid{
+    z-index: 9999;
+    margin-bottom: 1%;
+}
